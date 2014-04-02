@@ -50,9 +50,6 @@ if( !defined( 'ABSPATH' ) ) {
 <div id="container" class="hfeed">
 
 <?php responsive_header(); // before header hook ?>
-	<div class="skip-container cf">
-		<a class="skip-link screen-reader-text focusable" href="#main"><?php _e( '&darr; Skip to Main Content', 'responsive' ); ?></a>
-	</div><!-- .skip-container -->
 	<div id="header">
 
 		<?php responsive_header_top(); // before header content hook ?>
@@ -73,7 +70,7 @@ if( !defined( 'ABSPATH' ) ) {
 		<?php if( get_header_image() != '' ) : ?>
 
 			<div id="logo">
-				<a href="<?php echo home_url( '/' ); ?>"><img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
+				<a href="<?php echo home_url( '/' ); ?>"><img src="<?php header_image(); ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
 			</div><!-- end of #logo -->
 
 		<?php endif; // header image was removed ?>

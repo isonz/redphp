@@ -96,6 +96,10 @@
 		clear: both;
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
 		margin: 0 auto;
+		
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
 	}
 
 	.js .main-nav .menu {

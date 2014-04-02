@@ -223,7 +223,7 @@ sub {
 }
 
 .col-300 {
-	width: 31.914893617021%;
+	width: 27%;
 }
 
 .col-380 {
@@ -239,7 +239,7 @@ sub {
 }
 
 .col-620 {
-	width: 65.957446808511%;
+	width: 70%;
 }
 
 .col-700 {
@@ -649,7 +649,7 @@ form div {
 -------------------------------------------------------------- */
 #container {
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 90%;
 	padding: 0px 25px;
 }
 
@@ -1176,6 +1176,10 @@ form div {
 	clear: both;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
 	margin: 0 auto;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 
 .main-nav {
