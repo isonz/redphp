@@ -18,10 +18,10 @@
 define('DB_NAME', 'redphp_net');
 
 /** MySQL数据库用户名 */
-define('DB_USER', 'redphp_net');
+define('DB_USER', 'root');
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', 'redphpNet@ison2012');
+define('DB_PASSWORD', 'admin888');
 
 /** MySQL主机 */
 define('DB_HOST', 'localhost');
