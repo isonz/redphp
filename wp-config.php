@@ -15,13 +15,13 @@
 
 // ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
 /** WordPress数据库的名称 */
-define('DB_NAME', 'redphp_net');
+define('DB_NAME', 'test');
 
 /** MySQL数据库用户名 */
-define('DB_USER', 'redphp_net');
+define('DB_USER', 'test');
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', 'redphpNet@ison2012');
+define('DB_PASSWORD', 'test123');
 
 /** MySQL主机 */
 define('DB_HOST', 'localhost');
