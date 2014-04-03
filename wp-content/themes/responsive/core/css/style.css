@@ -78,12 +78,24 @@ body {
 	-moz-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	background: #efefef;
-	color: #555555;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	color: #333;
+	font-family:"Proxima Nova","Helvetica Neue",Arial,"Microsoft YaHei",sans-serif;
+	font-size: 1.15em;
 	font-smoothing: antialiased;
 	line-height: 1.5em;
 	text-rendering: optimizeLegibility;
+	/*background:url("../images/line-tile.png");*/
+}
+body a{
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+	text-decoration: underline;
+	cursor: auto;
+}
+body a:hover {
+	color: #0181eb;
 }
 
 /* =Typography
@@ -502,19 +514,22 @@ dt {
 /* =Blockquote
 -------------------------------------------------------------- */
 blockquote {
-	background: #f9f9f9;
+	background: #002b36;
 	border: none;
-	border-left: 4px solid #d6d6d6;
 	margin: 20px;
 	overflow: auto;
 	padding: 0 0 10px 12px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
 }
 
 blockquote p {
-	font-family: 'Georgia', 'Times New Roman', Times, serif;
-	font-style: italic;
+	font-family:"Courier New", Courier, monospace, Times, serif;
 	font-size: 18px;
 	line-height: 26px;
+	color:#b8d307 !important;
 }
 
 /* =Headings
@@ -526,37 +541,37 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-	font-size: 2.625em; /* = 42px */
+	font-size: 1.8em; /* = 42px */
 	margin-bottom: .5em;
 	margin-top: .5em;
 }
 
 h2 {
-	font-size: 2.250em; /* = 36px */
+	font-size: 1.50em; /* = 36px */
 	margin-bottom: .75em;
 	margin-top: .75em;
 }
 
 h3 {
-	font-size: 1.875em; /* = 30px */
+	font-size: 1.2em; /* = 30px */
 	margin-bottom: .857em;
 	margin-top: .857em;
 }
 
 h4 {
-	font-size: 1.500em; /* = 24px */
+	font-size: 1.1em; /* = 24px */
 	margin-bottom: 1em;
 	margin-top: 1em;
 }
 
 h5 {
-	font-size: 1.125em; /* = 18px */
+	font-size: .90em; /* = 18px */
 	margin-bottom: 1.125em;
 	margin-top: 1.125em;
 }
 
 h6 {
-	font-size: 1.000em; /* = 16px */
+	font-size: .700em; /* = 16px */
 	margin-bottom: 1.285em;
 	margin-top: 1.285em;
 }
@@ -571,7 +586,7 @@ form,
 table,
 address,
 blockquote {
-	margin: 1.6em 0;
+	margin: 1.4em 0;
 }
 
 th, td {
@@ -656,18 +671,23 @@ form div {
 #wrapper {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
-	background-color: #ffffff;
 	border: 1px solid #e5e5e5;
 	border-radius: 4px;
 	clear: both;
 	margin: 20px auto 20px auto;
 	padding: 0 20px 20px 20px;
 	position: relative;
+	background:	#f8f8f8 url('../images/noise.png') top left;
+	/*
+	-webkit-box-shadow: #000 0 2px 5px;
+	-moz-box-shadow: #000 0 2px 5px;
+	box-shadow: #000 0 2px 5px;
+	*/
 }
 
 .front-page #wrapper {
 	background-color: transparent;
-	border: none;
+	/*border: none; */
 	margin: 20px auto 20px auto;
 	padding: 0;
 }
@@ -1180,6 +1200,11 @@ form div {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
+	/*
+	-webkit-box-shadow: #000 0 1px 2px;
+	-moz-box-shadow: #000 0 1px 2px;
+	box-shadow: #000 0 1px 2px;
+	*/
 }
 
 .main-nav {
@@ -1266,10 +1291,9 @@ form div {
 
 .menu a {
 	border-left: 1px solid #585858;
-	color: #ffffff;
 	cursor: pointer;
 	display: block;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 700;
 	height: 45px;
 	line-height: 45px;
@@ -1279,6 +1303,9 @@ form div {
 	text-decoration: none;
 	text-shadow: 0 -1px 0 #000000;
 	white-space: nowrap;
+	color: #fff;
+	font-family: "PT Sans","Helvetica Neue",Arial,"Microsoft YaHei",sans-serif;
+	text-shadow: #000 0 2px;
 }
 
 .menu a:hover {
@@ -2130,7 +2157,7 @@ input[type='submit']:active {
 
 /* =Buttons (Colors)
 -------------------------------------------------------------- */
-a.blue {
+a.blue,input[type='submit'] {
 	background-color: #1874cd; /* Dodger Blue */
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#4f9eea), to(#1874cd));
 	background-image: -webkit-linear-gradient(top, #4f9eea, #1874cd);
@@ -2144,7 +2171,7 @@ a.blue {
 	text-shadow: 0 -1px 0 #115290;
 }
 
-a.blue:hover {
+a.blue:hover,input[type='submit']:hover  {
 	background-color: #7db7f0;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#7db7f0), to(#1874cd));
 	background-image: -webkit-linear-gradient(top, #7db7f0, #1874cd);
