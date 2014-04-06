@@ -111,7 +111,7 @@
 		display: none;
 		position: absolute;
 		width: 100%;
-		top: 37px;
+		top: 30px;
 		z-index: 1000;
 	}
 
@@ -256,6 +256,10 @@
 		padding-bottom: 10px;
 		text-align: center;
 	}
+	#container{
+		max-width: 100%;
+		padding: 0
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -322,6 +326,10 @@
 	#footer .social-icons {
 		text-align: center;
 	}
+	#container{
+		max-width: 100%;
+		padding: 0
+	}
 }
 
 @media screen and (max-width: 320px) {
@@ -353,6 +361,10 @@
 
 	.show-320 {
 		display: block;
+	}
+	#container{
+		max-width: 100%;
+		padding: 0
 	}
 }
 
@@ -402,5 +414,9 @@
 
 	.show-240 {
 		display: block;
+	}
+	#container{
+		max-width: 100%;
+		padding: 0
 	}
 }
