@@ -2870,6 +2870,7 @@ span.byline, span.author.vcard{display:none}
 	overflow: hidden;
 	height: 30px;
 }
+#widgets ul {margin: 0;}
 
 .ui-scrolltop {
 	display: block;
