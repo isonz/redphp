@@ -2855,7 +2855,7 @@ span.byline, span.author.vcard{display:none}
 .post-entry .read-more{display:none}
 .post-data{display:none}
 #content-archive .post-entry p{margin: 0 0 2em 0;}
-.widget-wrapper.widget_meta ul{margin: 0 1.5em 0 0;}
+#widgets ul{margin: 0 1.5em 0 0;}
 
 
 .ui-scrolltop {

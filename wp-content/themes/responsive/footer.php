@@ -40,8 +40,7 @@ $responsive_options = responsive_get_options();
 		<?php get_sidebar( 'footer' ); ?>
 
 		<div class="grid col-940">
-
-			<div class="grid col-540">
+			<!--  <div class="grid col-540"> -->
 				<?php if( has_nav_menu( 'footer-menu', 'responsive' ) ) { ?>
 					<?php wp_nav_menu( array(
 										   'container'      => '',
@@ -52,7 +51,7 @@ $responsive_options = responsive_get_options();
 					);
 					?>
 				<?php } ?>
-			</div>
+			<!-- </div> -->
 			<!-- end of col-540 -->
 
 			<div class="grid col-380 fit">
