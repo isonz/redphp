@@ -548,7 +548,6 @@ if ( !function_exists( 'responsive_breadcrumb_lists' ) ) {
 			if ( 1 == $show['home'] ) {
 				$html_output .= '<div class="breadcrumb-list"><a href="' . $home_link . '">' . $text['home'] . '</a></div>';
 			}
-
 		} else {
 			$html_output .= '<div class="breadcrumb-list" xmlns:v="http://rdf.data-vocabulary.org/#">' . sprintf( $link, $home_link, $text['home'] ) . $delimiter;
 
@@ -565,8 +564,8 @@ if ( !function_exists( 'responsive_breadcrumb_lists' ) ) {
 					$cats = str_replace( '</a>', '</a>' . $after_link, $cats );
 					$html_output .= $cats;
 				}
-				$html_output .= $before . sprintf( $text['category'], single_cat_title( '', false ) ) . $after;
-
+				//$html_output .= $before . sprintf( $text['category'], single_cat_title( '', false ) ) . $after;
+				$html_output .= $before . sprintf( single_cat_title( '', false ) ) . $after;
 			} elseif ( is_search() ) {
 				$html_output .= $before . sprintf( $text['search'], get_search_query() ) . $after;
 
@@ -676,7 +675,6 @@ if ( !function_exists( 'responsive_breadcrumb_lists' ) ) {
 		}
 
 		echo $html_output;
-
 	} // end responsive_breadcrumb_lists
 
 }

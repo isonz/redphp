@@ -548,7 +548,7 @@ h1 {
 
 h2 {
 	font-size: 1.50em; /* = 36px */
-	margin-bottom: .75em;
+	/* margin-bottom: .75em; */
 	margin-top: .75em;
 }
 
@@ -675,7 +675,7 @@ form div {
 	border-radius: 4px;
 	clear: both;
 	margin: 20px auto 20px auto;
-	padding: 0 20px 20px 20px;
+	padding: 0 20px;
 	position: relative;
 	background:	#f8f8f8 url('../images/noise.png') top left;
 	/*
@@ -737,7 +737,7 @@ form div {
 /* =Content
 -------------------------------------------------------------- */
 #content {
-	margin-top: 40px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -761,7 +761,7 @@ form div {
 }
 
 #content-archive {
-	margin-top: 40px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -876,6 +876,7 @@ form div {
 
 .post-entry {
 	clear: both;
+	line-height:1.8em;
 }
 
 .post-meta {
@@ -946,7 +947,7 @@ form div {
 }
 
 #widgets {
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 #widgets a {
@@ -1081,7 +1082,7 @@ form div {
 .widget-title h3,
 .widget-title-home h3 {
 	display: block;
-	font-size: 24px;
+	font-size: 100%;
 	font-weight: 700;
 	line-height: 23px;
 	margin: 0;
@@ -1745,6 +1746,7 @@ ul.menu > li:hover {
 .comment-body {
 	clear: both;
 	padding: 10px;
+	font-size: 0.8em;
 }
 
 .comment-body p {
@@ -1786,6 +1788,7 @@ ul.menu > li:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#eaeaea);
 	margin-top: 15px;
 	padding: 10px 20px 50px;
+	font-size: 0.8em;
 }
 
 #respond label {
@@ -2838,3 +2841,40 @@ BDO[DIR="rtl"] {
 }
 
 /*The last 29 days of the month are the hardest."- Nikola Tesla*/
+
+#home_widget_1, #home_widget_2, #home_widget_3{
+	width: 31%;
+}
+#home_widget_1{
+	margin-left:1.4%;
+}
+.entry-title.post-title a{
+	text-decoration:none;
+}
+span.byline, span.author.vcard{display:none}
+.post-entry .read-more{display:none}
+.post-data{display:none}
+#content-archive .post-entry p{margin: 0 0 2em 0;}
+.widget-wrapper.widget_meta ul{margin: 0 1.5em 0 0;}
+
+
+.ui-scrolltop {
+	display: block;
+	position: fixed;
+	_position: absolute;
+	right: 5px;
+	bottom: 200px;
+	z-index: 9999;
+	height: 60px;
+	width: 60px;
+	text-indent: -999999px;
+	overflow: hidden;
+	background: #000 url(../images/scroll-top.png) 18px 21px no-repeat;
+	opacity: 0.1;
+	filter: alpha(opacity=10);
+	cursor: pointer;
+	-moz-transition: opacity 0.3s ease-in,opacity 0.3s ease-out;
+	-webkit-transition: opacity 0.3s ease-in,opacity 0.3s ease-out;
+	-o-transition: opacity 0.3s ease-in,opacity 0.3s ease-out;
+	transition: opacity 0.3s ease-in,opacity 0.3s ease-out;
+}

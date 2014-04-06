@@ -428,12 +428,11 @@ jQuery(document).ready(function ($) {
  * Mobile Menu
  */
 (function ($) {
-	var current = $('.main-nav li.current-menu-item a').html();
-	current = $('.main-nav li.current_page_item a').html();
+	var current = $('.main-nav ul li.current-menu-item a').html();
+	//current = $('.main-nav li.current_page_item a').html();
 	if ($('span').hasClass('custom-mobile-menu-title')) {
 		current = $('span.custom-mobile-menu-title').html();
-	}
-	else if (typeof current == 'undefined' || current === null) {
+	}else if (typeof current == 'undefined' || current === null) {
 		if ($('body').hasClass('home')) {
 			if ($('#logo span').hasClass('site-name')) {
 				current = $('#logo .site-name a').html();

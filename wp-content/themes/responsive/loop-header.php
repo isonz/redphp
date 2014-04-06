@@ -27,6 +27,7 @@ get_responsive_breadcrumb_lists();
 /**
  * Display archive information
  */
+/*
 if( is_category() || is_tag() || is_author() || is_date() ) {
 	?>
 	<h6 class="title-archive">
@@ -44,6 +45,7 @@ if( is_category() || is_tag() || is_author() || is_date() ) {
 	</h6>
 <?php
 }
+*/
 
 /**
  * Display Search information
