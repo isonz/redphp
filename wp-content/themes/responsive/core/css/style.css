@@ -2847,7 +2847,10 @@ BDO[DIR="rtl"] {
 	width: 31%;
 }
 #home_widget_1{
-	margin-left:1.4%;
+	margin-right: 0;
+}
+#home_widget_2{
+	margin: 0 3.5%;
 }
 .entry-title.post-title a{
 	text-decoration:none;
@@ -2857,7 +2860,7 @@ span.byline, span.author.vcard{display:none}
 .post-data{display:none}
 #content-archive .post-entry p{margin: 0 0 2em 0;}
 #widgets ul{margin: 0 1.5em 0 0;}
-
+.home #wrapper{border: 0;}
 
 .ui-scrolltop {
 	display: block;
