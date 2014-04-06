@@ -2861,7 +2861,7 @@ span.byline, span.author.vcard{display:none}
 #content-archive .post-entry p{margin: 0 0 2em 0;}
 #widgets ul{margin: 0 1.5em 0 0;}
 .home #wrapper{border: 0;}
-#widgets li.cat-item ul.children{padding: 0; margin: 0;}
+#widgets .widget-wrapper.widget_categories>ul{padding: 0; margin: 0;}
 #widgets li.cat-item ul.children li{
 	font-size: 80%;
 	list-style-type: none;
