@@ -77,20 +77,14 @@ if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page
 				*/
 				?>
 			</h2>
-
+			<p>
 			<?php
 			if ( isset( $responsive_options['home_content_area'] ) && $db && $empty ) {
 				echo do_shortcode( wpautop( $responsive_options['home_content_area'] ) );
-			} else {
-				?>
-				<p>
-					<?php _e( 'Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image
-					or even YouTube video if you like.', 'responsive' ); ?>
-				</p>
-
-			<?php
-			}
-
+			} 
+			?>
+			</p>
+			<?php 
 			if ( $responsive_options['cta_button'] == 0 ): ?>
 
 				<div class="call-to-action">
