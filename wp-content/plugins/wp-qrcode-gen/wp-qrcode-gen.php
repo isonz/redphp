@@ -33,7 +33,7 @@ class wp_qrcode_gen extends WP_Widget {
 		<!-- 
 		<a href="<?php echo plugins_url()."/wp-qrcode-gen/"; ?>saveas.php?website=<?php bloginfo('name');?>&image_path=http://api.qrserver.com/v1/create-qr-code/?size=100x100&data=<?php echo $url; ?>" target="_blank">
 		-->
-		<img src="http://api.qrserver.com/v1/create-qr-code/?size=200x200&data=<?php echo $url; ?>" title="<?php echo $url; ?>" alt="QR: <?php echo $url; ?>" />
+		<img src="http://api.qrserver.com/v1/create-qr-code/?size=150x150&data=<?php echo $url; ?>" title="<?php echo $url; ?>" alt="QR: <?php echo $url; ?>" />
 		<!-- 
 		</a>
 		-->
