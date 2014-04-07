@@ -514,7 +514,7 @@ dt {
 
 /* =Blockquote
 -------------------------------------------------------------- */
-blockquote, blockquote pre {
+blockquote,pre {
 	background: #002b36;
 	border: none;
 	margin: 20px;
