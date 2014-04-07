@@ -36,7 +36,7 @@ function exportCSV($filename,$data) {
 }
 
 //获取IP地址
-function getIP()
+function getRealIP()
 {
 	if (isSet($_SERVER)) {
 		if (isSet($_SERVER["HTTP_X_FORWARDED_FOR"])) {
@@ -56,6 +56,30 @@ function getIP()
 		}
 	}
 	return $realip;
+}
+
+function getIP() 
+{
+	if (getenv('HTTP_CLIENT_IP')) {
+		$ip = getenv('HTTP_CLIENT_IP');
+	}
+	elseif (getenv('HTTP_X_FORWARDED_FOR')) {
+		$ip = getenv('HTTP_X_FORWARDED_FOR');
+	}
+	elseif (getenv('HTTP_X_FORWARDED')) {
+		$ip = getenv('HTTP_X_FORWARDED');
+	}
+	elseif (getenv('HTTP_FORWARDED_FOR')) {
+		$ip = getenv('HTTP_FORWARDED_FOR');
+
+	}
+	elseif (getenv('HTTP_FORWARDED')) {
+		$ip = getenv('HTTP_FORWARDED');
+	}
+	else {
+		$ip = $_SERVER['REMOTE_ADDR'];
+	}
+	return $ip;
 }
 
 //获取当前完整的带参数的URL
