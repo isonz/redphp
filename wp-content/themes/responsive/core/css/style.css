@@ -601,6 +601,12 @@ caption {
 blockquote, pre {
 	padding: 1.2em;
 	overflow-x: scroll;
+	/*
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	*/
+	word-wrap: normal;
+	white-space: pre;
 }
 
 blockquote:first-child, pre:first-child {
