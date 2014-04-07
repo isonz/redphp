@@ -60,26 +60,23 @@ function getRealIP()
 
 function getIP() 
 {
-	if (getenv('HTTP_CLIENT_IP')) {
-		$ip = getenv('HTTP_CLIENT_IP');
-	}
-	elseif (getenv('HTTP_X_FORWARDED_FOR')) {
-		$ip = getenv('HTTP_X_FORWARDED_FOR');
-	}
-	elseif (getenv('HTTP_X_FORWARDED')) {
-		$ip = getenv('HTTP_X_FORWARDED');
-	}
-	elseif (getenv('HTTP_FORWARDED_FOR')) {
-		$ip = getenv('HTTP_FORWARDED_FOR');
+	$ipaddress = '';
+     if ($_SERVER['HTTP_CLIENT_IP'])
+         $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+     else if($_SERVER['HTTP_X_FORWARDED_FOR'])
+         $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+     else if($_SERVER['HTTP_X_FORWARDED'])
+         $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+     else if($_SERVER['HTTP_FORWARDED_FOR'])
+         $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+     else if($_SERVER['HTTP_FORWARDED'])
+         $ipaddress = $_SERVER['HTTP_FORWARDED'];
+     else if($_SERVER['REMOTE_ADDR'])
+         $ipaddress = $_SERVER['REMOTE_ADDR'];
+     else
+         $ipaddress = 'UNKNOWN';
 
-	}
-	elseif (getenv('HTTP_FORWARDED')) {
-		$ip = getenv('HTTP_FORWARDED');
-	}
-	else {
-		$ip = $_SERVER['REMOTE_ADDR'];
-	}
-	return $ip;
+     return $ipaddress; 
 }
 
 //获取当前完整的带参数的URL
