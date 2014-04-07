@@ -66,10 +66,10 @@ if( !defined( 'ABSPATH' ) ) {
 
 			<?php if( !dynamic_sidebar( 'home-widget-3' ) ) : ?>
 				<div class="widget-wrapper"><div class="widget-title-home"><h3>
-				<?php _e( 'Home Widget 3', 'responsive' ); ?>
+				本站二维码
 				</h3></div>
-					<div class="textwidget">
-					<?php _e( 'This is your third home widget box. To edit please go to Appearance > Widgets and choose 8th widget from the top in area 8 called Home Widget 3. Title is also manageable from widgets as well.', 'responsive' ); ?>
+					<div class="textwidget" style="text-align: center; padding-bottom: 16px;">
+					<img alt="www.redphp.net 红色PHP 红色映像" src="/wp-content/themes/responsive/core/images/brcode.png">
 					</div>
 				</div><!-- end of .widget-wrapper -->
 			<?php endif; //end of home-widget-3 ?>
