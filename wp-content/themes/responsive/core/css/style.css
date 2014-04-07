@@ -24,11 +24,11 @@ ol, ul {
 	list-style: none;
 }
 
-blockquote, q {
+blockquote, q , pre{
 	quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after, pre:before, pre:after, {
 	content: '';
 	content: none;
 }
@@ -526,7 +526,7 @@ blockquote,pre {
 	border-radius: 4px;
 }
 
-blockquote p {
+blockquote p, pre p {
 	font-family:"Courier New", Courier, monospace, Times, serif;
 	font-size: 18px;
 	line-height: 26px;
@@ -586,7 +586,7 @@ pre,
 form,
 table,
 address,
-blockquote {
+blockquote{
 	margin: 1.4em 0;
 }
 
@@ -598,11 +598,11 @@ caption {
 	padding-bottom: .8em;
 }
 
-blockquote {
+blockquote, pre {
 	padding: 0 1em;
 }
 
-blockquote:first-child {
+blockquote:first-child, pre:first-child {
 	margin: .8em 0;
 }
 
