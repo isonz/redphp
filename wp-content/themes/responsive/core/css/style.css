@@ -2892,3 +2892,7 @@ span.byline, span.author.vcard{display:none}
 	-o-transition: opacity 0.3s ease-in,opacity 0.3s ease-out;
 	transition: opacity 0.3s ease-in,opacity 0.3s ease-out;
 }
+
+#wp_qrcode-2{text-align:center}
+
+
