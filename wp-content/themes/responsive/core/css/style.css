@@ -526,7 +526,7 @@ blockquote,pre {
 	border-radius: 4px;
 }
 
-blockquote p, pre p {
+blockquote p, pre p, pre {
 	font-family:"Courier New", Courier, monospace, Times, serif;
 	font-size: 18px;
 	line-height: 26px;
