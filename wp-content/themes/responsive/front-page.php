@@ -77,13 +77,11 @@ if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page
 				*/
 				?>
 			</h2>
-			<p>
 			<?php
 			if ( isset( $responsive_options['home_content_area'] ) && $db && $empty ) {
 				echo do_shortcode( wpautop( $responsive_options['home_content_area'] ) );
 			} 
 			?>
-			</p>
 			<?php 
 			if ( $responsive_options['cta_button'] == 0 ): ?>
 
