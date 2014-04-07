@@ -32,7 +32,7 @@ if( !defined( 'ABSPATH' ) ) {
 					本站支持所有浏览设备
 					</h3></div>
 					<div class="textwidget">
-						<img class="aligncenter" src="http://127.0.0.3/wp-content/themes/responsive/core/images/featured-image.png" alt="支持所有设备">
+						<img class="aligncenter" src="/wp-content/themes/responsive/core/images/featured-image.png" alt="支持所有设备">
 					</div>
 				</div><!-- end of .widget-wrapper -->
 			<?php endif; //end of home-widget-1 ?>
