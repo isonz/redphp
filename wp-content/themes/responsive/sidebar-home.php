@@ -45,10 +45,14 @@ if( !defined( 'ABSPATH' ) ) {
 
 			<?php if( !dynamic_sidebar( 'home-widget-2' ) ) : ?>
 				<div class="widget-wrapper"><div class="widget-title-home"><h3>
-				<?php _e( 'Home Widget 2', 'responsive' ); ?>
+				您的位置信息
 				</h3></div>
-				<div class="textwidget">
-					<?php _e( 'This is your second home widget box. To edit please go to Appearance > Widgets and choose 7th widget from the top in area 7 called Home Widget 2. Title is also manageable from widgets as well.', 'responsive' ); ?>
+				<div class="textwidget" style="padding-bottom: 17px;">
+					IP:<?php echo $ip = getIP(); ?><br>
+					<?php echo  str_replace(".", '', preg_replace("[\d]", '', mb_convert_encoding(file_get_contents("http://int.dpool.sina.com.cn/iplookup/iplookup.php?ip=$ip"), 'utf-8', 'gbk')));?>
+					<br><br>
+					<iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=7" width="225" height="90" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+					<br><br>
 				</div>
 			</div><!-- end of .widget-wrapper -->
 			<?php endif; //end of home-widget-2 ?>
