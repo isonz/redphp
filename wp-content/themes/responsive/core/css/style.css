@@ -600,6 +600,7 @@ caption {
 
 blockquote, pre {
 	padding: 1.2em;
+	overflow-x: scroll;
 }
 
 blockquote:first-child, pre:first-child {
