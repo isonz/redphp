@@ -528,7 +528,7 @@ blockquote,pre {
 
 blockquote p, pre p, pre {
 	font-family:"Courier New", Courier, monospace, Times, serif;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 26px;
 	color:#b8d307 !important;
 }
