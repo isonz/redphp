@@ -56,21 +56,25 @@ if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page
 
 			<h1 class="featured-title">
 				<?php
+				/*
 				if ( isset( $responsive_options['home_headline'] ) && $db && $empty ) {
 					echo $responsive_options['home_headline'];
 				} else {
 					_e( 'Hello, World!', 'responsive' );
 				}
+				*/
 				?>
 			</h1>
 
 			<h2 class="featured-subtitle">
 				<?php
+				/*
 				if ( isset( $responsive_options['home_subheadline'] ) && $db && $empty )
 					echo $responsive_options['home_subheadline'];
 				else {
 					_e( 'Your H2 subheadline here', 'responsive' );
 				}
+				*/
 				?>
 			</h2>
 

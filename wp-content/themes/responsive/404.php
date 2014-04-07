@@ -28,10 +28,8 @@ if( !defined( 'ABSPATH' ) ) {
 	<div id="post-0" class="error404">
 		<?php responsive_entry_top(); ?>
 
-		<div class="post-entry">
-
+		<div class="post-entry" style="text-align: center">
 			<?php get_template_part( 'loop-no-posts' ); ?>
-
 		</div>
 		<!-- end of .post-entry -->
 
