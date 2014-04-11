@@ -1240,7 +1240,8 @@ function wp_notify_moderator($comment_id) {
 	$message_headers = apply_filters( 'comment_moderation_headers',    $message_headers, $comment_id );
 
 	foreach ( $emails as $email ) {
-		@wp_mail( $email, $subject, $notify_message, $message_headers );
+		//ison.zhang
+		//@wp_mail( $email, $subject, $notify_message, $message_headers );
 	}
 
 	return true;

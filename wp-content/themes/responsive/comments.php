@@ -76,15 +76,24 @@ if( !empty( $comments_by_type['pings'] ) ) : // let's seperate pings/trackbacks 
 <?php endif; ?>
 
 <?php if( comments_open() ) : ?>
-
+	
 	<?php
+	$author = esc_attr( $commenter['comment_author'] );
+	if(!$author) $author = 'guest'.rand(0, 9999999);
+	
 	$fields = array(
-		'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name', 'responsive' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
-		'<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" /></p>',
-		'email'  => '<p class="comment-form-email"><label for="email">' . __( 'E-mail', 'responsive' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
-		'<input id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" /></p>',
-		'url'    => '<p class="comment-form-url"><label for="url">' . __( 'Website', 'responsive' ) . '</label>' .
-		'<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
+		//ison.zhang
+		//'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name', 'responsive' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+		//'<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" /></p>',
+		'<input id="author" name="author" type="hidden" value="'.$author.'" size="30" />',
+		//'email'  => '<p class="comment-form-email"><label for="email">' . __( 'E-mail', 'responsive' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+		//ison.zhang
+		//'<input id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" /></p>',
+		'<input id="email" name="email" type="hidden" value="guest@redphp.net" size="30" />',
+		//'url'    => '<p class="comment-form-url"><label for="url">' . __( 'Website', 'responsive' ) . '</label>' .
+		//ison.zhang
+		//'<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
+		'<input id="url" name="url" type="hidden" value="http://www.redphp.net" size="30" />',
 	);
 
 	$defaults = array( 'fields' => apply_filters( 'comment_form_default_fields', $fields ) );
