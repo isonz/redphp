@@ -9,6 +9,9 @@
  */
 
 /** WordPress Administration Bootstrap */
+$content = isset($_POST['content']) ? $_POST['content'] : null;
+if($content) $_POST['content'] = str_replace('	', '    ', $content);
+
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 $parent_file = 'edit.php';
