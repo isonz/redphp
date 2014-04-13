@@ -37,4 +37,12 @@ function responsive_free_get_option( $option, $default = false ) {
 	return $default;
 }
 
+add_shortcode( 'note', 'sc_note' );
+
+function sc_note( $atts, $content = null ) {
+	 if ( current_user_can( 'publish_posts' ) )
+		return '<div class="note">'.$content.'</div>';
+	return '';
+}
+
 ?>
