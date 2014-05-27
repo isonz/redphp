@@ -20,6 +20,7 @@ if( !defined( 'ABSPATH' ) ) {
  * @since          available since Release 1.0
  */
 ?>
+<!--
 <?php responsive_widgets_before(); // above widgets container hook ?>
 	<div id="widgets" class="home-widgets">
 		<div id="home_widget_1" class="grid col-300">
@@ -34,12 +35,12 @@ if( !defined( 'ABSPATH' ) ) {
 					<div class="textwidget">
 						<img class="aligncenter" src="/wp-content/themes/responsive/core/images/featured-image.png" alt="支持所有设备">
 					</div>
-				</div><!-- end of .widget-wrapper -->
-			<?php endif; //end of home-widget-1 ?>
+				</div>
+			<?php endif; ?>
 
-			<?php responsive_widgets_end(); // responsive after widgets hook ?>
+			<?php responsive_widgets_end();  ?>
 		</div>
-		<!-- end of .col-300 -->
+
 		<div id="home_widget_2" class="grid col-300">
 			<?php responsive_widgets(); // responsive above widgets hook ?>
 
@@ -54,12 +55,12 @@ if( !defined( 'ABSPATH' ) ) {
 					<iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=7" width="225" height="90" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 					<br><br>
 				</div>
-			</div><!-- end of .widget-wrapper -->
+			</div>
 			<?php endif; //end of home-widget-2 ?>
 
 			<?php responsive_widgets_end(); // after widgets hook ?>
 		</div>
-		<!-- end of .col-300 -->
+
 
 		<div id="home_widget_3" class="grid col-300 fit">
 			<?php responsive_widgets(); // above widgets hook ?>
@@ -71,11 +72,13 @@ if( !defined( 'ABSPATH' ) ) {
 					<div class="textwidget" style="text-align: center; padding-bottom: 16px;">
 					<img alt="www.redphp.net 红色PHP 红色映像" src="/wp-content/themes/responsive/core/images/brcode.png">
 					</div>
-				</div><!-- end of .widget-wrapper -->
+				</div>
 			<?php endif; //end of home-widget-3 ?>
 
 			<?php responsive_widgets_end(); // after widgets hook ?>
 		</div>
-		<!-- end of .col-300 fit -->
-	</div><!-- end of #widgets -->
+
+	</div>
 <?php responsive_widgets_after(); // after widgets container hook ?>
+
+-->
