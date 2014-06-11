@@ -578,7 +578,8 @@ function wp_default_styles( &$styles ) {
 		}
 
 		// Hotlink Open Sans, for now
-		$open_sans_font_url = "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,400,600&subset=$subsets";
+		//ison.zhang
+		//$open_sans_font_url = "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,400,600&subset=$subsets";
 	}
 
 	$styles->add( 'open-sans', $open_sans_font_url );
