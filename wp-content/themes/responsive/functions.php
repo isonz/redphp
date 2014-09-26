@@ -54,5 +54,13 @@ remove_action('admin_init', '_maybe_update_core');    // 禁止 WordPress 检查
 remove_action('admin_init', '_maybe_update_plugins'); // 禁止 WordPress 更新插件
 remove_action('admin_init', '_maybe_update_themes');  // 禁止 WordPress 更新主题
 
+//禁用WP的GOOGLE字体
+function coolwp_remove_open_sans_from_wp_core() {
+	wp_deregister_style( 'open-sans');
+	wp_register_style( 'open-sans', false );
+	wp_enqueue_style('open-sans','');
+}
+add_action('init', 'coolwp_remove_open_sans_from_wp_core' );
+
 
 ?>
