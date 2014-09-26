@@ -35,13 +35,15 @@ if( !defined( 'ABSPATH' ) ) {
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+		<meta property="qc:admins" content="4173476777625400066547" />
 		<title><?php wp_title( '&#124;', true, 'right' ); ?></title>
 
 		<link rel="profile" href="http://gmpg.org/xfn/11"/>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"/>
 
 		<?php wp_head(); ?>
+
+<script type="text/javascript" name="baidu-tc-cerfication" src="http://apps.bdimg.com/cloudaapi/lightapp.js#2f9d3f3f3d4e40235a2c003d30ab1645"></script><script type="text/javascript">window.bd && bd._qdc && bd._qdc.init({app_id: '8d79bf35755b83d87c901af5'});</script>
 	</head>
 
 <body <?php body_class(); ?>>
