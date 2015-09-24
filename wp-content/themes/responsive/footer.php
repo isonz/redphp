@@ -74,6 +74,7 @@ $responsive_options = responsive_get_options();
 		
 		<div class="grid col-300 fit powered">
 			<a href="http://www.miibeian.gov.cn/" target="_blank" title="ICP备案号:粤ICP备14020862号">ICP备案号:粤ICP备14020862号</a>
+			<a href="http://s.click.taobao.com/t?e=m%3D2%26s%3D6dQF5XDk4egcQipKwQzePCperVdZeJviEViQ0P1Vf2kguMN8XjClAmojYDSeJzt66gBt%2FiSdTRPqgnklGGLg6d%2BUTRBQmPCPGkQIFRPwS9QWTqfbUu4IFzDVuRn8ddiDsEVVC24eqozcHtRpEUy6RHVyxRO0gvF4QxJtmCgOmCLXl8Q7TEjBF%2BX11FSyvDCnQiv%2BJKjlPObGDmntuH4VtA%3D%3D">阿里云服务器</a>
 		</div>
 		<!-- end .powered -->
 
@@ -92,6 +93,5 @@ var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " 
 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F253f9cddb74fdc2705f3da3f36c2906c' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <div>
-
 </body>
 </html>
