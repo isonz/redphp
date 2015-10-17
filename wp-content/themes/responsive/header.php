@@ -38,6 +38,7 @@ if( !defined( 'ABSPATH' ) ) {
 		<meta property="qc:admins" content="4173476777625400066547" />
 		<meta property="wb:webmaster" content="25718a14ebe65d1e" />
 		<meta name="baidu-site-verification" content="8HUFZokx42" />
+		<meta name="baidu_union_verify" content="8c7404a597fb2817941927a3ae53e736">
 		<title><?php wp_title( '&#124;', true, 'right' ); ?></title>
 
 		<link rel="profile" href="http://gmpg.org/xfn/11"/>
